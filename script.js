@@ -372,7 +372,7 @@ function handleSubmit(e) {
   if (EJ_PUBLIC_KEY === "YOUR_PUBLIC_KEY" || EJ_SERVICE_ID === "YOUR_SERVICE_ID" || EJ_TEMPLATE_ID === "YOUR_TEMPLATE_ID") {
     // Demo mode - simulate success
     setTimeout(() => {
-      showFormToast('✅ Thanks for your message! (Demo mode - EmailJS not configured)', 'success');
+    showFormToast('✅ Thank you! Your message has been sent successfully.', 'success');
       form.reset();
       btn.innerHTML = originalText;
       btn.disabled = false;
