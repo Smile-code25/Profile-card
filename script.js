@@ -5,9 +5,9 @@
  */
 
 // ── EmailJS Credentials (UPDATE THESE WITH YOUR ACTUAL KEYS) ──────
-const EJ_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";  // Get from https://dashboard.emailjs.com
-const EJ_SERVICE_ID  = "YOUR_SERVICE_ID";  // Create a service in EmailJS dashboard
-const EJ_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Create an email template
+const EJ_PUBLIC_KEY  = "I3VWVhYf7jJjyqAQg";
+const EJ_SERVICE_ID  = "service_dhajvvn";
+const EJ_TEMPLATE_ID = "template_4qx1jgq";
 
 // ── App Entry Point ────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
