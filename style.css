@@ -3,6 +3,25 @@
    Theme: Blue/Purple Gradient · Glassmorphism · Mobile-First
 ============================================================ */
 
+.avatar-wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  object-position: center 20%; /* 👈 THIS FIXES HEAD ALIGNMENT */
+  border-radius: 50%;
+  z-index: 2;
+}
+
 /* ── CSS Variables ── */
 :root {
   --primary:       #6366f1;
@@ -200,13 +219,7 @@ strong { color: var(--primary); font-weight: 600; }
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
-/* ── Avatar ── */
-.avatar-wrap {
-  position: relative;
-  width: 140px; height: 140px;
-  margin: 0 auto 24px;
-}
-
+ 
 .avatar-ring {
   position: absolute; inset: -5px;
   border-radius: 50%;
@@ -224,16 +237,7 @@ strong { color: var(--primary); font-weight: 600; }
 
 @keyframes spinRing { to { transform: rotate(360deg); } }
 
-.avatar-img {
-  position: absolute;
-  inset: 5px;
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--bg);
-  z-index: 1;
-}
+ 
 
 .status-dot {
   position: absolute;
