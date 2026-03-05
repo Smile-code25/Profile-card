@@ -323,8 +323,8 @@ function validateField(field) {
 
   switch (name) {
     case 'name':
-      if (val.length < 2)          msg = 'Name must be at least 2 characters.';
-      else if (!/^[a-zA-Z\s]+$/.test(val)) msg = 'Only letters and spaces allowed.';
+      if (val.length < 2)          msg = 'Please enter at least 2 characters in the name.';
+      else if (!/^[a-zA-Z\s]+$/.test(val)) msg = 'Only letters and spaces are allowed.';
       break;
     case 'email':
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) msg = 'Enter a valid email address.';
